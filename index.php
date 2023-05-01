@@ -1,5 +1,12 @@
 <?php
 include "auth/koneksi.php";
+// cookie visits
+if (isset($_COOKIE['visits'])) {
+    $visits = $_COOKIE['visits'] + 1;
+} else {
+    $visits = 1;
+}
+setcookie('visits', $visits, time() + (86400 * 30), "/");
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +28,7 @@ include "auth/koneksi.php";
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
@@ -387,7 +394,7 @@ include "auth/koneksi.php";
     </script>
 
     <!-- javascript -->
-    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
 </body>
 
 </html>

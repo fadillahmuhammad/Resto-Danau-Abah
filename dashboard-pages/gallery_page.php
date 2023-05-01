@@ -1,0 +1,1 @@
+<h1>Ini adalah konten gallery pages</h1>

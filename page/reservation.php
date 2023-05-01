@@ -1,3 +1,12 @@
+<?php
+if (isset($_COOKIE['visits'])) {
+    $visits = $_COOKIE['visits'] + 1;
+} else {
+    $visits = 1;
+}
+setcookie('visits', $visits, time() + (86400 * 30), "/");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +26,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
 </head>
 
 <body>
@@ -180,7 +189,7 @@
 
     <!-- javascript -->
     <script src="../js/reservation.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/script1.js"></script>
 </body>
 
 </html>

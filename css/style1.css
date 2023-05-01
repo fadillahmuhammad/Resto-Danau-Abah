@@ -280,7 +280,6 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  /* transition: 0.3s; */
   border-radius: 5px;
 }
 
@@ -553,7 +552,7 @@ p {
 .menu .food-container .menu-wrap .menu-content .menu-flex {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   gap: 1rem;
 }
@@ -781,8 +780,8 @@ button[type="submit"]:hover {
 
 /* loader */
 .loader {
-  border: 0.4rem solid #d4d4d4; /* Light grey */
-  border-top: 0.4rem solid #3f2525; /* Blue */
+  border: 0.4rem solid #d4d4d4;
+  border-top: 0.4rem solid #3f2525;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;

@@ -1,3 +1,4 @@
+<!-- koneksi database -->
 <?php
 $koneksi = mysqli_connect(
     "localhost",

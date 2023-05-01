@@ -21,6 +21,7 @@ form.addEventListener("submit", (event) => {
   });
   const string = values.join(",+");
 
+  // url whatsapp
   const whatsappURL = `https://api.whatsapp.com/send?phone=6285213835314&text=Halo+Resto+Danau+Abah%2C+Saya+telah+mengisi+form+untuk+reservasi+di+website.%0D%0A%0D%0ANama+%3A+${fullname}%0D%0ANo.+HP+%3A+${phone}%0D%0AEmail+%3A+${email}%0D%0A%0D%0ASaya+ingin+reservasi+pada+%3A%0D%0ATanggal+%3A+${date}%0D%0AJam+%3A+${time}%0D%0AJumlah+Tamu+%3A+${guests}+orang%0D%0A%0D%0ASpecial+Request+(Tempat)+%3A+${string}.%0D%0A%0D%0ADitunggu+informasi+selanjutnya.+Terima+kasih.
   `;
 
