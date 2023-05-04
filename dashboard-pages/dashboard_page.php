@@ -43,7 +43,7 @@ $visits = isset($_COOKIE['visits']) ? intval($_COOKIE['visits']) : 0;
     </div>
     <div class="box">
         <div class="right_side">
-            <div class="numbers">9</div>
+            <div class="numbers">?</div>
             <div class="box_topic">Reservation</div>
         </div>
         <i class='bx bxs-book-open'></i>
@@ -82,7 +82,7 @@ $visits = isset($_COOKIE['visits']) ? intval($_COOKIE['visits']) : 0;
                         </td>
                         <td>
                             <span class="img_group">
-                                <img src="../images/<?php echo $row['gambar_makanan']; ?>" alt="">
+                                <img src="../images/img-menu/<?php echo $row['gambar_makanan']; ?>" alt="">
                             </span>
                         </td>
                     </tr>
@@ -124,7 +124,7 @@ $visits = isset($_COOKIE['visits']) ? intval($_COOKIE['visits']) : 0;
                         </td>
                         <td>
                             <span class="img_group">
-                                <img src="../images/<?php echo $row['gambar_minuman']; ?>" alt="">
+                                <img src="../images/img-menu/<?php echo $row['gambar_minuman']; ?>" alt="">
                             </span>
                         </td>
                     </tr>

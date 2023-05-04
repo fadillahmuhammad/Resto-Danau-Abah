@@ -40,7 +40,7 @@ include "../auth/koneksi.php";
                         </td>
                         <td>
                             <span class="img_group">
-                                <img src="../images/<?php echo $row['gambar_makanan']; ?>" alt="">
+                                <img src="../images/img-menu/<?php echo $row['gambar_makanan']; ?>" alt="">
                             </span>
                         </td>
                         <td>

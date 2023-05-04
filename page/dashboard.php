@@ -47,22 +47,6 @@
           </a>
         </li>
         <li>
-          <a href="#" id="gallery" class="sidebar-item">
-            <i class='bx bxs-photo-album'></i>
-            <span class="links_name">
-              Gallery
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#" id="reservation" class="sidebar-item">
-            <i class='bx bxs-book-open'></i>
-            <span class="links_name">
-              Reservation
-            </span>
-          </a>
-        </li>
-        <li>
           <a href="#" id="help" class="sidebar-item">
             <i class='bx bxs-help-circle'></i>
             <span class="links_name">

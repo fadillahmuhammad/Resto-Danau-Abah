@@ -134,7 +134,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM makanan WHERE id_jenis_makanan='1' ORDER BY id_makanan ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card">
-                                <img class="menu-image" src="images/<?php echo $row['gambar_makanan']; ?>" alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>" alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_makanan']; ?>
@@ -177,7 +177,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM minuman WHERE id_jenis_minuman='1' ORDER BY id_minuman ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card">
-                                <img class="menu-image" src="images/<?php echo $row['gambar_minuman']; ?>" alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>" alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_minuman']; ?>

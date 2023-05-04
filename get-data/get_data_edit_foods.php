@@ -50,7 +50,7 @@ if (isset($_POST['id'])) {
         </div>
         <div class="gambar-button">
             <div id="hero">
-                <img src="../images/<?php echo $data['gambar_makanan']; ?>" alt="gambar makanan">
+                <img src="../images/img-menu/<?php echo $data['gambar_makanan']; ?>" alt="gambar makanan">
             </div>
             <div class="final-btn">
                 <span class="cancel">Batal</span>

@@ -14,9 +14,9 @@ $file_tmp = $_FILES['gambar']['tmp_name'];
 // cek if have new foto
 if ($file_tmp) {
     // delete old foto
-    unlink('../images/' . $gambar_lama);
+    unlink('../images/img-menu/' . $gambar_lama);
 
-    move_uploaded_file($file_tmp, '../images/' . $gambar);
+    move_uploaded_file($file_tmp, '../images/img-menu/' . $gambar);
 
     if ($tabel == "makanan") {
         // query update makanan
