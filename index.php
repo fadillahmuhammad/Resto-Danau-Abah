@@ -58,7 +58,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <img src="images/bg3.jpg" alt="Image 1">
         </div>
         <div class="carousel-slide">
-            <img src="images/bg2.jpg" alt="Image 2">
+            <img src="images/bg4.jpg" alt="Image 2">
         </div>
         <div class="carousel-slide">
             <img src="images/bg1.jpg" alt="Image 3">
@@ -134,7 +134,8 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM makanan WHERE id_jenis_makanan='1' ORDER BY id_makanan ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card">
-                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>" alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>"
+                                    alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_makanan']; ?>
@@ -177,7 +178,8 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM minuman WHERE id_jenis_minuman='1' ORDER BY id_minuman ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card">
-                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>" alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>"
+                                    alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_minuman']; ?>
@@ -283,7 +285,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <img src="images/bg1.jpg" alt="Gallery1">
                 </div>
                 <div class="gallery-card">
-                    <img src="images/bg2.jpg" alt="Gallery2">
+                    <img src="images/bg4.jpg" alt="Gallery2">
                 </div>
                 <div class="gallery-card">
                     <img src="images/bg3.jpg" alt="Gallery3">
@@ -295,7 +297,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <img src="images/bg1.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
-                    <img src="images/bg2.jpg" alt="Gallery5">
+                    <img src="images/bg4.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
                     <img src="images/bg3.jpg" alt="Gallery5">
@@ -307,7 +309,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <img src="images/bg1.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
-                    <img src="images/bg2.jpg" alt="Gallery1">
+                    <img src="images/bg4.jpg" alt="Gallery1">
                 </div>
                 <div class="gallery-card">
                     <img src="images/bg3.jpg" alt="Gallery2">
@@ -319,7 +321,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <img src="images/bg1.jpg" alt="Gallery4">
                 </div>
                 <div class="gallery-card">
-                    <img src="images/bg2.jpg" alt="Gallery5">
+                    <img src="images/bg4.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
                     <img src="images/bg3.jpg" alt="Gallery5">
@@ -331,7 +333,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <img src="images/bg1.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
-                    <img src="images/bg2.jpg" alt="Gallery5">
+                    <img src="images/bg4.jpg" alt="Gallery5">
                 </div>
                 <div class="gallery-card">
                     <img src="images/bg3.jpg" alt="Gallery1">

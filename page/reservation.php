@@ -56,7 +56,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <img src="../images/bg3.jpg" alt="Image 1">
         </div>
         <div class="carousel-slide">
-            <img src="../images/bg2.jpg" alt="Image 2">
+            <img src="../images/bg4.jpg" alt="Image 2">
         </div>
         <div class="carousel-slide">
             <img src="../images/bg1.jpg" alt="Image 3">

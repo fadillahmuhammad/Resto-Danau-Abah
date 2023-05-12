@@ -661,7 +661,12 @@
   margin-left: 0.55rem;
 }
 
-.card-body2 .add-flex .add-component .sub-add .input-group.type-list .list-type {
+.card-body2
+  .add-flex
+  .add-component
+  .sub-add
+  .input-group.type-list
+  .list-type {
   padding: 0.3rem;
   border: 1px solid black;
   border-radius: 5px;
@@ -701,7 +706,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9998;
 }
 

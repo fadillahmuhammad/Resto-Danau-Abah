@@ -1,3 +1,16 @@
+<?php
+// Mulai sesi PHP
+session_start();
+
+// Cek apakah tidak ada data 'user_id' yang dikirim melalui form
+if (!isset($_SESSION['user_id'])) {
+  // Hapus semua variabel sesi
+  session_unset();
+  // Hancurkan sesi
+  session_destroy();
+  header("Location: ../login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +18,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Admin & Dashboard</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="../css/dashboardstyle1.css">
   <!-- box icon -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -55,7 +68,7 @@
           </a>
         </li>
         <li class="login">
-          <a href="#">
+          <a href="../auth/logout_success.php">
             <span class="links_name login_out">
               Login Out
             </span>
@@ -86,7 +99,15 @@
   </script>
 
   <!-- jquey -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">\
+    // Mengirim permintaan AJAX untuk menghapus sesi saat halaman ditutup
+    window.addEventListener('beforeunload', function () {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '../auth/logout_success.php', false);
+      xhr.send();
+    });
+  </script>
+
   <!-- javascript -->
   <script src="../js/dashboard.js"></script>
 </body>
