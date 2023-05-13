@@ -77,8 +77,8 @@ include "../auth/koneksi.php";
                                 <select class="list-type" id="list-type" name="list" required>
                                     <option disabled selected value="">Pilih Jenis</option>
                                     <option value="1">Basic</option>
-                                    <option value="2">Coffee</option>
-                                    <option value="3">Juice</option>
+                                    <option value="2">Buah</option>
+                                    <option value="3">Coffee</option>
                                 </select>
                             </div>
                         </div>

@@ -76,10 +76,10 @@ include "../auth/koneksi.php";
                                     <p>:</p>
                                     <select class="list-type" id="list-type" name="list" required>
                                         <option disabled selected value="">Pilih Jenis</option>
-                                        <option value="1">Ayam</option>
-                                        <option value="2">Ikan</option>
-                                        <option value="3">Tumisan</option>
-                                        <option value="4">Sate</option>
+                                        <option value="1">Goreng</option>
+                                        <option value="2">Tumisan</option>
+                                        <option value="3">Sate</option>
+                                        <option value="4">Lainnya</option>
                                     </select>
                                 </div>
                             </div>

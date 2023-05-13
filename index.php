@@ -121,10 +121,10 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <span class="category-indicator"></span>
             <div class="menu-wrap">
                 <div class="menu-categories">
-                    <h2 class="menu-category food active" data-category="1">Ayam</h2>
-                    <h2 class="menu-category food" data-category="2">Ikan</h2>
-                    <h2 class="menu-category food" data-category="3">Tumisan</h2>
-                    <h2 class="menu-category food" data-category="4">Sate</h2>
+                    <h2 class="menu-category food active" data-category="1">Goreng</h2>
+                    <h2 class="menu-category food" data-category="2">Tumisan</h2>
+                    <h2 class="menu-category food" data-category="3">Sate</h2>
+                    <h2 class="menu-category food" data-category="4">Lainnya</h2>
                 </div>
                 <div class="menu-content">
                     <span class="menu-prev food"><i data-feather="chevron-left"></i></span>
@@ -167,8 +167,8 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <div class="menu-wrap">
                 <div class="menu-categories">
                     <h2 class="menu-category beverage active" data-category="1">Basic</h2>
-                    <h2 class="menu-category beverage" data-category="2">Coffee</h2>
-                    <h2 class="menu-category beverage" data-category="3">Juice</h2>
+                    <h2 class="menu-category beverage" data-category="2">Buah</h2>
+                    <h2 class="menu-category beverage" data-category="3">Coffee</h2>
                 </div>
                 <div class="menu-content">
                     <span class="menu-prev beverage"><i data-feather="chevron-left"></i></span>
