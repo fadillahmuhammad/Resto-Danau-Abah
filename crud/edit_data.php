@@ -2,13 +2,13 @@
 include "../auth/koneksi.php";
 
 $tabel = $_GET['tabel'];
-$id = mysqli_real_escape_string($koneksi, $_POST['id']);
-$jenis = mysqli_real_escape_string($koneksi, $_POST['list']);
-$nama = mysqli_real_escape_string($koneksi, $_POST['name']);
-$harga = mysqli_real_escape_string($koneksi, $_POST['price']);
-$gambar_lama = mysqli_real_escape_string($koneksi, $_POST['gambar_lama']);
+$id = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['id']));
+$jenis = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['list']));
+$nama = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['name']));
+$harga = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['price']));
+$gambar_lama = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['gambar_lama']));
 
-$gambar = $_FILES['gambar']['name'];
+$gambar = htmlspecialchars($_FILES['gambar']['name']);
 $file_tmp = $_FILES['gambar']['tmp_name'];
 
 // cek if have new foto
@@ -56,6 +56,4 @@ if ($file_tmp) {
         header("location: ../page/dashboard.php");
     }
 }
-
-
 ?>

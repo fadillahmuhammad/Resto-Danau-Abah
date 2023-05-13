@@ -189,7 +189,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
 
     <!-- javascript -->
     <script src="../js/reservation.js"></script>
-    <script src="../js/script1.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

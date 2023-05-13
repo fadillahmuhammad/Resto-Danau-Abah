@@ -127,13 +127,13 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <h2 class="menu-category food" data-category="4">Sate</h2>
                 </div>
                 <div class="menu-content">
-                    <span class="menu-prev"><i data-feather="chevron-left"></i></span>
-                    <span class="menu-next"><i data-feather="chevron-right"></i></span>
+                    <span class="menu-prev food"><i data-feather="chevron-left"></i></span>
+                    <span class="menu-next food"><i data-feather="chevron-right"></i></span>
                     <div class="menu-flex food">
                         <?php
                         $data = mysqli_query($koneksi, "SELECT * FROM makanan WHERE id_jenis_makanan='1' ORDER BY id_makanan ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
-                            <div class="menu-card">
+                            <div class="menu-card food">
                                 <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>"
                                     alt="Menu Image">
                                 <span class="menu-price">
@@ -171,13 +171,13 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     <h2 class="menu-category beverage" data-category="3">Juice</h2>
                 </div>
                 <div class="menu-content">
-                    <span class="menu-prev"><i data-feather="chevron-left"></i></span>
-                    <span class="menu-next"><i data-feather="chevron-right"></i></span>
+                    <span class="menu-prev beverage"><i data-feather="chevron-left"></i></span>
+                    <span class="menu-next beverage"><i data-feather="chevron-right"></i></span>
                     <div class="menu-flex beverage">
                         <?php
                         $data = mysqli_query($koneksi, "SELECT * FROM minuman WHERE id_jenis_minuman='1' ORDER BY id_minuman ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
-                            <div class="menu-card">
+                            <div class="menu-card beverage">
                                 <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>"
                                     alt="Menu Image">
                                 <span class="menu-price">
@@ -396,7 +396,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
     </script>
 
     <!-- javascript -->
-    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

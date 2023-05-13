@@ -153,12 +153,12 @@ document.querySelectorAll(".menu-category.beverage").forEach((item) => {
   });
 });
 
-// swiper menu
-// masihhhh tololllll bangetttt
-const menuFlex = document.querySelector(".menu-flex");
-const menuCards = document.querySelectorAll(".menu-card");
-const menuPrev = document.querySelector(".menu-prev");
-const menuNext = document.querySelector(".menu-next");
+// swiper menu (masih gajelasssss)
+// food
+const menuFlex = document.querySelector(".menu-flex.food");
+const menuCards = document.querySelectorAll(".menu-card.food");
+const menuPrev = document.querySelector(".menu-prev.food");
+const menuNext = document.querySelector(".menu-next.food");
 
 const cardWidth = menuCards[0].offsetWidth + 16;
 const displayCards = 4;
@@ -185,6 +185,45 @@ menuNext.addEventListener("click", () => {
     menuFlex.style.transform = `translateX(0)`;
   }
   menuFlex.style.transform = `translateX(-${currentIndexMenu * cardWidth}px)`;
+});
+
+// beverage
+const menuFlex2 = document.querySelector(".menu-flex.beverage");
+const menuCards2 = document.querySelectorAll(".menu-card.beverage");
+const menuPrev2 = document.querySelector(".menu-prev.beverage");
+const menuNext2 = document.querySelector(".menu-next.beverage");
+
+const cardWidth2 = menuCards2[0].offsetWidth + 16;
+const displayCards2 = 4;
+const totalCards2 = menuCards2.length;
+const totalWidth2 = cardWidth2 * totalCards2;
+let currentIndexMenu2 = 0;
+
+menuFlex2.style.width = `${totalWidth2}px`;
+
+menuPrev2.addEventListener("click", () => {
+  currentIndexMenu2--;
+  if (currentIndexMenu2 < 0) {
+    currentIndexMenu2 = totalCards2 - displayCards2;
+    menuFlex2.style.transform = `translateX(-${
+      currentIndexMenu2 * cardWidth2
+    }px)`;
+    currentIndexMenu2--;
+  }
+  menuFlex2.style.transform = `translateX(-${
+    currentIndexMenu2 * cardWidth2
+  }px)`;
+});
+
+menuNext2.addEventListener("click", () => {
+  currentIndexMenu2++;
+  if (currentIndexMenu2 + displayCards2 > totalCards2) {
+    currentIndexMenu2 = 0;
+    menuFlex2.style.transform = `translateX(0)`;
+  }
+  menuFlex2.style.transform = `translateX(-${
+    currentIndexMenu2 * cardWidth2
+  }px)`;
 });
 
 // automatic scroll gallery

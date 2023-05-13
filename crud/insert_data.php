@@ -2,11 +2,11 @@
 include "../auth/koneksi.php";
 
 $tabel = $_GET['tabel'];
-$jenis = mysqli_real_escape_string($koneksi, $_POST['list']);
-$nama = mysqli_real_escape_string($koneksi, $_POST['name']);
-$harga = mysqli_real_escape_string($koneksi, $_POST['price']);
+$jenis = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['list']));
+$nama = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['name']));
+$harga = htmlspecialchars(mysqli_real_escape_string($koneksi, $_POST['price']));
 
-$gambar = $_FILES['gambar']['name'];
+$gambar = htmlspecialchars($_FILES['gambar']['name']);
 $file_tmp = $_FILES['gambar']['tmp_name'];
 move_uploaded_file($file_tmp, '../images/img-menu/' . $gambar);
 
