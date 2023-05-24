@@ -42,4 +42,3 @@ if ($tabel == "makanan") {
         or die("Query gagal dijalankan: " . mysqli_error($koneksi));
     header("location: ../page/dashboard.php");
 }
-?>

@@ -11,4 +11,3 @@ while ($row = mysqli_fetch_array($data)) {
     echo '<span class="menu-name"><h3>' . $row['nama_makanan'] . '</h3></span>';
     echo '</div>';
 }
-?>

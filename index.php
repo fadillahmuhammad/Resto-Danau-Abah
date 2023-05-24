@@ -21,8 +21,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -87,12 +86,10 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
         <div class="about-flex">
             <div class="about-judul-paraf">
                 <h2>About Us</h2>
-                <p>Resto Danau Abah adalah sebuah restoran yang terletak di tepi Danau Abah, sebuah danau yang indah di
-                    daerah pedesaan. Restoran ini menawarkan pemandangan danau yang spektakuler, dan pengunjung dapat
-                    menikmati hidangan yang lezat sambil menikmati keindahan alam sekitarnya.</p>
-                <p>Restoran ini menggunakan bahan-bahan segar dan berkualitas tinggi untuk menyajikan hidangan yang
-                    lezat. Selain itu, staf yang ramah dan profesional akan membuat kunjungan Anda di Resto Danau Abah
-                    menjadi pengalaman yang menyenangkan dan tak terlupakan.</p>
+                <?php $data = mysqli_query($koneksi, 'SELECT * FROM about_us'); ?>
+                <?php while ($row = mysqli_fetch_array($data)) { ?>
+                    <p><?php echo $row['paragraf']; ?></p>
+                <?php } ?>
             </div>
             <div class="about-gambar">
                 <img src="images/about1.webp" alt="Image 1" class="img1">
@@ -134,8 +131,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM makanan WHERE id_jenis_makanan='1' ORDER BY id_makanan ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card food">
-                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>"
-                                    alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_makanan']; ?>" alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_makanan']; ?>
@@ -178,8 +174,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                         $data = mysqli_query($koneksi, "SELECT * FROM minuman WHERE id_jenis_minuman='1' ORDER BY id_minuman ASC");
                         while ($row = mysqli_fetch_array($data)) { ?>
                             <div class="menu-card beverage">
-                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>"
-                                    alt="Menu Image">
+                                <img class="menu-image" src="images/img-menu/<?php echo $row['gambar_minuman']; ?>" alt="Menu Image">
                                 <span class="menu-price">
                                     <p>
                                         <?php echo $row['harga_minuman']; ?>
@@ -265,11 +260,8 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                     </div>
                 </div>
                 <p>Jl. Raya Perum Korpri, Suradita, Kec. Cisauk, Tangerang, Banten.</p>
-                <iframe
-                    src="
-                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3039754885635!2d106.62573757372225!3d-6.354682162165772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3f5f8745c79%3A0xb8f428c496ed2852!2sDanau%20Abah%20Suradita%20BSD!5e0!3m2!1sen!2sid!4v1682262619402!5m2!1sen!2sid"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="map"></iframe></iframe>
+                <iframe src="
+                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3039754885635!2d106.62573757372225!3d-6.354682162165772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3f5f8745c79%3A0xb8f428c496ed2852!2sDanau%20Abah%20Suradita%20BSD!5e0!3m2!1sen!2sid!4v1682262619402!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe></iframe>
             </div>
         </div>
     </section>
@@ -377,12 +369,9 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                 <h2 class="sosialmedia-title">Sosial Media</h2>
                 <div class="sosialmedia-flex">
                     <a target="_blank" href="https://wa.me/6288225839841"><img src="images/wa.png" alt="Whatsapp"></a>
-                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="images/ig.png"
-                            alt="Instagram"></a>
-                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="images/email.png"
-                            alt="Email"></a>
-                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="images/tiktok.png"
-                            alt="Tiktok"></a>
+                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="images/ig.png" alt="Instagram"></a>
+                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="images/email.png" alt="Email"></a>
+                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="images/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
         </div>

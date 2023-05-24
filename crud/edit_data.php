@@ -26,7 +26,6 @@ if ($file_tmp) {
         mysqli_query($koneksi, $query)
             or die("Query gagal dijalankan: " . mysqli_error($koneksi));
         header("location: ../page/dashboard.php");
-
     } else if ($tabel == "minuman") {
         // query update minuman
 
@@ -45,7 +44,6 @@ if ($file_tmp) {
         mysqli_query($koneksi, $query)
             or die("Query gagal dijalankan: " . mysqli_error($koneksi));
         header("location: ../page/dashboard.php");
-
     } else if ($tabel == "minuman") {
         // query update minuman
 
@@ -56,4 +54,3 @@ if ($file_tmp) {
         header("location: ../page/dashboard.php");
     }
 }
-?>

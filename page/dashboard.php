@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="../css/dashboardstyle1.css">
+  <link rel="stylesheet" href="../css/dashboardstyle3.css">
   <!-- box icon -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -56,6 +56,14 @@ if (!isset($_SESSION['user_id'])) {
             <i class='bx bxs-drink'></i>
             <span class="links_name">
               Beverages
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="about" class="sidebar-item">
+            <i class='bx bxs-message-dots'></i>
+            <span class="links_name">
+              About
             </span>
           </a>
         </li>
@@ -99,9 +107,9 @@ if (!isset($_SESSION['user_id'])) {
   </script>
 
   <!-- jquey -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js">\
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
     // Mengirim permintaan AJAX untuk menghapus sesi saat halaman ditutup
-    window.addEventListener('beforeunload', function () {
+    window.addEventListener('beforeunload', function() {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', '../auth/logout_success.php', false);
       xhr.send();
@@ -109,7 +117,7 @@ if (!isset($_SESSION['user_id'])) {
   </script>
 
   <!-- javascript -->
-  <script src="../js/dashboard.js"></script>
+  <script src="../js/dashboard1.js"></script>
 </body>
 
 </html>

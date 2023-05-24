@@ -66,8 +66,7 @@ include "../auth/koneksi.php";
             <form method="POST" action="../crud/insert_data.php?tabel=minuman" enctype="multipart/form-data">
                 <div class="add-flex">
                     <div class="hero">
-                        <input type="file" id="gambar" onchange="previewImage()" accept="image/*" name="gambar"
-                            required>
+                        <input type="file" id="gambar" onchange="previewImage()" accept="image/*" name="gambar" required>
                     </div>
                     <div class="add-component">
                         <div class="sub-add beverages-type">
@@ -93,8 +92,7 @@ include "../auth/koneksi.php";
                             <p>Harga Minuman</p>
                             <div class="input-group">
                                 <p>:</p>
-                                <input type="text" id="price-beverages" name="price" placeholder="Masukkan Harga"
-                                    required>
+                                <input type="text" id="price-beverages" name="price" placeholder="Masukkan Harga" required>
                             </div>
                         </div>
                     </div>
@@ -119,9 +117,9 @@ include "../auth/koneksi.php";
 
 <!-- js: menampilkan card-body when add-data's clicked -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // saat tombol "Add Food" di klik
-        $(".add-data").click(function () {
+        $(".add-data").click(function() {
             $(".card-body").show();
             $(".overlay").show();
             $("body > *:not(.container)").css({
@@ -131,7 +129,7 @@ include "../auth/koneksi.php";
         });
 
         // saat tombol "cancel" di klik
-        $(".cancel").click(function () {
+        $(".cancel").click(function() {
             $(".card-body").hide();
             $(".overlay").hide();
             $("body > *:not(.container)").css({
@@ -144,9 +142,9 @@ include "../auth/koneksi.php";
 
 <!-- js: menampilkan card-body2 when edit-data's clicked -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // saat tombol "cancel" di klik
-        $(".cancel").click(function () {
+        $(".cancel").click(function() {
             $(".card-body2").hide();
             $(".overlay").hide();
             $("body > *:not(.container)").css({
@@ -157,8 +155,8 @@ include "../auth/koneksi.php";
     });
 
     // edit data
-    $(document).ready(function () {
-        $(".edit").click(function () {
+    $(document).ready(function() {
+        $(".edit").click(function() {
             var id = $(this).attr("id");
             $.ajax({
                 url: "../get-data/get_data_edit_beverages.php",
@@ -166,7 +164,7 @@ include "../auth/koneksi.php";
                 data: {
                     id: id
                 },
-                success: function (data) {
+                success: function(data) {
                     $("#items").html(data);
                     $(".card-body2").show();
                     $(".overlay").show();
@@ -189,7 +187,7 @@ include "../auth/koneksi.php";
         if (gambar.files && gambar.files[0]) {
             var reader = new FileReader();
 
-            reader.onload = function (e) {
+            reader.onload = function(e) {
                 gambarPreview.innerHTML = '<img src="' + e.target.result + '"/>';
             }
 
@@ -200,15 +198,17 @@ include "../auth/koneksi.php";
 
 <!-- js: sending id_minuman to delete_data.php -->
 <script>
-    $(document).ready(function () {
-        $(".delete").click(function () {
+    $(document).ready(function() {
+        $(".delete").click(function() {
             var id = $(this).attr("id");
             if (confirm("Anda yakin ingin menghapus data ini?")) {
                 $.ajax({
                     url: "../crud/delete_data.php?tabel=minuman",
                     type: "POST",
-                    data: { id: id },
-                    success: function () {
+                    data: {
+                        id: id
+                    },
+                    success: function() {
                         location.reload();
                     }
                 });

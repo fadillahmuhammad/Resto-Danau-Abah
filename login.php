@@ -29,12 +29,12 @@ session_destroy();
         <form action="auth/login_success.php" method="post">
             <div class="login-container">
                 <h2>Login</h2>
-                <?php if (isset($_SESSION['login_error'])): ?>
+                <?php if (isset($_SESSION['login_error'])) : ?>
                     <div id="notification"></div>
                     <script>
                         document.getElementById("notification").innerHTML = "<?php echo $_SESSION['login_error']; ?>";
                         document.getElementById("notification").classList.add("show");
-                        setTimeout(function () {
+                        setTimeout(function() {
                             document.getElementById("notification").classList.remove("show");
                         }, 3000);
                     </script>

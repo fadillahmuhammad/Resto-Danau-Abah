@@ -19,8 +19,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -121,8 +120,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                                 <label for="table">Meja&nbsp;Makan</label>
                             </div>
                             <div class="special-request-flex">
-                                <input type="checkbox" name="private_meeting_room" value="Private Meeting Room"
-                                    id="private_meeting_room">
+                                <input type="checkbox" name="private_meeting_room" value="Private Meeting Room" id="private_meeting_room">
                                 <label for="private_meeting_room">Private&nbsp;Meeting&nbsp;Room</label>
                             </div>
                         </div>
@@ -166,14 +164,10 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <div class="sosialmedia-container">
                 <h2 class="sosialmedia-title">Sosial Media</h2>
                 <div class="sosialmedia-flex">
-                    <a target="_blank" href="https://wa.me/6288225839841"><img src="../images/wa.png"
-                            alt="Whatsapp"></a>
-                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="../images/ig.png"
-                            alt="Instagram"></a>
-                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="../images/email.png"
-                            alt="Email"></a>
-                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="../images/tiktok.png"
-                            alt="Tiktok"></a>
+                    <a target="_blank" href="https://wa.me/6288225839841"><img src="../images/wa.png" alt="Whatsapp"></a>
+                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="../images/ig.png" alt="Instagram"></a>
+                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="../images/email.png" alt="Email"></a>
+                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="../images/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
         </div>

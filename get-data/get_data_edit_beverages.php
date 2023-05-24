@@ -34,16 +34,14 @@ if (isset($_POST['id'])) {
                     <p>Nama Makanan</p>
                     <div class="input-group">
                         <p>:</p>
-                        <input type="text" id="name-food" name="name" value="<?php echo $data['nama_minuman']; ?>"
-                            required>
+                        <input type="text" id="name-food" name="name" value="<?php echo $data['nama_minuman']; ?>" required>
                     </div>
                 </div>
                 <div class="sub-add food-price">
                     <p>Harga Makanan</p>
                     <div class="input-group">
                         <p>:</p>
-                        <input type="text" id="price-food" name="price" value="<?php echo $data['harga_minuman']; ?>"
-                            required>
+                        <input type="text" id="price-food" name="price" value="<?php echo $data['harga_minuman']; ?>" required>
                     </div>
                 </div>
             </div>
@@ -61,9 +59,9 @@ if (isset($_POST['id'])) {
 </form>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // saat tombol "cancel" di klik
-        $(".cancel").click(function () {
+        $(".cancel").click(function() {
             $(".card-body2").hide();
             $(".overlay").hide();
             $("body > *:not(.container)").css({
@@ -83,7 +81,7 @@ if (isset($_POST['id'])) {
         if (gambar.files && gambar.files[0]) {
             var reader = new FileReader();
 
-            reader.onload = function (e) {
+            reader.onload = function(e) {
                 gambarPreview.innerHTML = '<img src="' + e.target.result + '"/>';
             }
 

@@ -265,9 +265,10 @@
   align-items: start;
 }
 
-/* start foods & beverages page */
+/* start foods, beverages page & about page*/
 .details.foods,
-.details.beverages {
+.details.beverages,
+.details.about {
   position: relative;
   width: 100%;
   display: grid;
@@ -300,7 +301,7 @@
 .bx.bxs-low-vision {
   color: #4e3a3a;
 }
-/* end foods & beverages page */
+/* end foods, beverages page & about page */
 
 .details .recent_project,
 .details .recent_project {
@@ -373,6 +374,11 @@
   padding: 1rem 1rem;
 }
 
+#paraf {
+  max-width: 400px;
+  overflow: hidden;
+}
+
 .details .recent_project table tbody tr td {
   position: relative;
   font-size: 0.938rem;
@@ -382,10 +388,10 @@
 }
 
 .details .recent_project table tbody tr td:nth-child(2) {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .details .recent_project table tbody tr td:last-child {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .details .badge {
@@ -708,6 +714,55 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9998;
+}
+
+/* edit-about */
+.add-flex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.add-flex2 .wrap-title {
+  display: flex;
+  gap: 3rem;
+}
+
+.add-flex2 .wrap-title .input-group2 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-flex2 .gambar-button2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.add-flex2 .gambar-button2 .cancel {
+  cursor: pointer;
+}
+
+.add-flex2 .gambar-button2 button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#desc {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #c3c3c3;
+  font-size: 1rem;
+  border: 1px solid black;
+  outline: none;
+  resize: none;
 }
 
 /* responsive */

@@ -28,6 +28,14 @@ $(document).ready(function () {
       },
     });
   });
+  $("#about").click(function () {
+    $.ajax({
+      url: "../dashboard-pages/about_page.php",
+      success: function (result) {
+        $("#content").html(result);
+      },
+    });
+  });
   $("#gallery").click(function () {
     $.ajax({
       url: "../dashboard-pages/gallery_page.php",

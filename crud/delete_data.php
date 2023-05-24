@@ -33,4 +33,3 @@ if (isset($_POST['id']) && isset($_GET['tabel'])) {
         mysqli_query($koneksi, $query_update);
     }
 }
-?>
