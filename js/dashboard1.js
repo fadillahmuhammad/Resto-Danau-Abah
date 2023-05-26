@@ -44,6 +44,14 @@ $(document).ready(function () {
       },
     });
   });
+  $("#gallery").click(function () {
+    $.ajax({
+      url: "../dashboard-pages/gallery_page.php",
+      success: function (result) {
+        $("#content").html(result);
+      },
+    });
+  });
   $("#reservation").click(function () {
     $.ajax({
       url: "../dashboard-pages/reservation_page.php",

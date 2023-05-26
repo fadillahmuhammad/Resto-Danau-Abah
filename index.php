@@ -273,66 +273,14 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
         <p class="gallery-desc">View Indah Dengan Pemandangan Danau Yang Spektakuler</p>
         <div class="gallery-wrap">
             <div class="gallery-flex">
-                <div class="gallery-card">
-                    <img src="images/bg1.jpg" alt="Gallery1">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery2">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg3.jpg" alt="Gallery3">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery4">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg1.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg3.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg1.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery1">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg3.jpg" alt="Gallery2">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery3">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg1.jpg" alt="Gallery4">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg3.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg1.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery5">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg3.jpg" alt="Gallery1">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/bg4.jpg" alt="Gallery2">
-                </div>
+                <?php $data = mysqli_query($koneksi, 'SELECT * FROM gallery');
+                $i = 1; ?>
+                <?php while ($row = mysqli_fetch_array($data)) { ?>
+                    <div class="gallery-card">
+                        <img src="images/img-gallery/<?php echo $row['gambar']; ?>" alt="Gallery<?php echo $i; ?>">
+                    </div>
+                <?php $i++;
+                } ?>
             </div>
         </div>
     </section>

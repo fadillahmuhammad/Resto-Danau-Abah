@@ -7,8 +7,4 @@ $koneksi = mysqli_connect(
     "danau_abah"
 
 );
-// function filter($data){
-//     global $koneksi;
-//     return $koneksi->real_escape_string(htmlspecialchars(trim($data)));
-// }
 ?>

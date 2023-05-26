@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_id'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="../css/dashboardstyle3.css">
+  <link rel="stylesheet" href="../css/dashboardstyle.css">
   <!-- box icon -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -64,6 +64,14 @@ if (!isset($_SESSION['user_id'])) {
             <i class='bx bxs-message-dots'></i>
             <span class="links_name">
               About
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="gallery" class="sidebar-item">
+            <i class='bx bxs-image'></i>
+            <span class="links_name">
+              Gallery
             </span>
           </a>
         </li>
