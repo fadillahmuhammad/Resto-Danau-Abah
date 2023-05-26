@@ -20,7 +20,7 @@ session_destroy();
 <body>
     <!-- navbar start -->
     <nav class="navbar">
-        <a href="#"><img src="images/logo_danauabah.png" class="navbar-logo" alt="logo"></a>
+        <a href="#"><img src="images/assets-web/logo_danauabah.png" class="navbar-logo" alt="logo"></a>
     </nav>
     <!-- navbar end -->
 

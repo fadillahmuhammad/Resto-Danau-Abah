@@ -33,7 +33,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
 <body>
     <!-- navbar start -->
     <nav class="navbar">
-        <a href="#"><img src="images/logo_home.png" class="navbar-logo" alt="logo"></a>
+        <a href="#"><img src="images/assets-web/logo_home.png" class="navbar-logo" alt="logo"></a>
         <div class="navbar-flex">
             <div class="navbar-nav">
                 <a href="#">Home</a>
@@ -54,16 +54,16 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
     <!-- hero & carousel section start -->
     <div class="carousel-container">
         <div class="carousel-slide">
-            <img src="images/bg3.jpg" alt="Image 1">
+            <img src="images/assets-web/bg3.jpg" alt="Image 1">
         </div>
         <div class="carousel-slide">
-            <img src="images/bg4.jpg" alt="Image 2">
+            <img src="images/assets-web/bg4.jpg" alt="Image 2">
         </div>
         <div class="carousel-slide">
-            <img src="images/bg1.jpg" alt="Image 3">
+            <img src="images/assets-web/bg1.jpg" alt="Image 3">
         </div>
         <div class="carousel-slide">
-            <img src="images/bg4.jpg" alt="Image 4">
+            <img src="images/assets-web/bg4.jpg" alt="Image 4">
         </div>
         <button class="carousel-prev"><i data-feather="chevron-left"></i></button>
         <button class="carousel-next"><i data-feather="chevron-right"></i></button>
@@ -92,13 +92,13 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
                 <?php } ?>
             </div>
             <div class="about-gambar">
-                <img src="images/about1.webp" alt="Image 1" class="img1">
-                <img src="images/about2.jpeg" alt="Image 2" class="img2">
+                <img src="images/assets-web/about1.webp" alt="Image 1" class="img1">
+                <img src="images/assets-web/about2.jpeg" alt="Image 2" class="img2">
             </div>
         </div>
-        <img src="images/flower1.png" alt="Image 3" class="img3">
-        <img src="images/flower2.png" alt="Image 4" class="img4">
-        <img src="images/flower3.png" alt="Image 5" class="img5">
+        <img src="images/assets-web/flower1.png" alt="Image 3" class="img3">
+        <img src="images/assets-web/flower2.png" alt="Image 4" class="img4">
+        <img src="images/assets-web/flower3.png" alt="Image 5" class="img5">
     </section>
     <!-- about us end -->
 
@@ -109,7 +109,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
         <div class="food-container">
             <div class="food-header">
                 <div class="food-img-h2">
-                    <img src="images/foodlogo.png" alt="logo-food">
+                    <img src="images/assets-web/foodlogo.png" alt="logo-food">
                     <h2>Food</h2>
                 </div>
                 <a class="viewall-menu" href="menu/Danau-Abah-Menu.pdf" download>View all menu ></a>
@@ -153,7 +153,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
         <div class="food-container">
             <div class="food-header">
                 <div class="food-img-h2">
-                    <img src="images/beveragelogo.png" alt="logo-beverage">
+                    <img src="images/assets-web/beveragelogo.png" alt="logo-beverage">
                     <h2>Beverages</h2>
                 </div>
                 <span></span>
@@ -199,15 +199,15 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
         <h2>Gratis Sambal Sepuasnya!</h2>
         <main class="content-sambal">
             <div class="item-sambal">
-                <img src="images/sambal1.png" alt="Sambal Mangga">
+                <img src="images/assets-web/sambal1.png" alt="Sambal Mangga">
                 <h2>Sambal Mangga</h2>
             </div>
             <div class="item-sambal">
-                <img src="images/sambal2.png" alt="Sambal Goreng">
+                <img src="images/assets-web/sambal2.png" alt="Sambal Goreng">
                 <h2>Sambal Goreng</h2>
             </div>
             <div class="item-sambal">
-                <img src="images/sambal3.png" alt="Sambal Kecombrang">
+                <img src="images/assets-web/sambal3.png" alt="Sambal Kecombrang">
                 <h2>Sambal Kecombrang</h2>
             </div>
         </main>
@@ -253,7 +253,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             </div>
             <div class="location-section">
                 <div class="location-header">
-                    <img src="images/maplogo.png" alt="Logo Map">
+                    <img src="images/assets-web/maplogo.png" alt="Logo Map">
                     <div class="location-header-col">
                         <h2>Location</h2>
                         <p>Resto Danau Abah BSD</p>
@@ -288,7 +288,7 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
 
     <!-- footer start -->
     <section class="footer-container">
-        <img src="images/logofooter.png" alt="Logo Footer" class="logofooter">
+        <img src="images/assets-web/logofooter.png" alt="Logo Footer" class="logofooter">
         <div class="footer-row">
             <div class="operasional-container">
                 <h2 class="operasional-title">Jam Operasional</h2>
@@ -316,10 +316,10 @@ setcookie('visits', $visits, time() + (86400 * 30), "/");
             <div class="sosialmedia-container">
                 <h2 class="sosialmedia-title">Sosial Media</h2>
                 <div class="sosialmedia-flex">
-                    <a target="_blank" href="https://wa.me/6288225839841"><img src="images/wa.png" alt="Whatsapp"></a>
-                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="images/ig.png" alt="Instagram"></a>
-                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="images/email.png" alt="Email"></a>
-                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="images/tiktok.png" alt="Tiktok"></a>
+                    <a target="_blank" href="https://wa.me/6288225839841"><img src="images/assets-web/wa.png" alt="Whatsapp"></a>
+                    <a target="_blank" href="https://instagram.com/danauabahofficial"><img src="images/assets-web/ig.png" alt="Instagram"></a>
+                    <a target="_blank" href="mailto:danauabahofficial@gmail.com"><img src="images/assets-web/email.png" alt="Email"></a>
+                    <a target="_blank" href="https://www.tiktok.com/@danauabahofficial"><img src="images/assets-web/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
         </div>

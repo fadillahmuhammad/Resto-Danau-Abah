@@ -631,7 +631,7 @@ h3 {
 /* sambal section */
 .hero-sambal {
   padding: 5rem 10% 5rem;
-  background-image: url("../images/sambalbg.png");
+  background-image: url("../images/assets-web/sambalbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
