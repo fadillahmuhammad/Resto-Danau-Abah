@@ -9,6 +9,10 @@ $foods = mysqli_fetch_array($result)[0];
 $result2 = mysqli_query($koneksi, "SELECT COUNT(*) FROM danau_abah.minuman;");
 $beverages = mysqli_fetch_array($result2)[0];
 
+// get total data gallery
+$result3 = mysqli_query($koneksi, "SELECT COUNT(*) FROM danau_abah.gallery;");
+$gallery = mysqli_fetch_array($result3)[0];
+
 // cookie visits
 $visits = isset($_COOKIE['visits']) ? intval($_COOKIE['visits']) : 0;
 ?>
@@ -43,10 +47,12 @@ $visits = isset($_COOKIE['visits']) ? intval($_COOKIE['visits']) : 0;
     </div>
     <div class="box">
         <div class="right_side">
-            <div class="numbers">?</div>
-            <div class="box_topic">Reservation</div>
+            <div class="numbers">
+                <?php echo $gallery; ?>
+            </div>
+            <div class="box_topic">Gallery</div>
         </div>
-        <i class='bx bxs-book-open'></i>
+        <i class='bx bxs-image'></i>
     </div>
 </div>
 <!-- End Card Boxs -->
