@@ -52,7 +52,7 @@ if (isset($_POST['id'])) {
             </div>
             <div class="final-btn">
                 <span class="cancel">Batal</span>
-                <button type="submit">Update</button>
+                <button id="btn-submit" type="submit">Update</button>
             </div>
         </div>
     </div>
@@ -69,6 +69,12 @@ if (isset($_POST['id'])) {
                 "overflow": "auto"
             });
         });
+    });
+</script>
+
+<script>
+    document.getElementById("btn-submit").addEventListener("click", function() {
+        alert("Data berhasil diperbarui!");
     });
 </script>
 

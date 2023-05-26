@@ -17,7 +17,7 @@ if (isset($_POST['id'])) {
             <p>Gambar</p>
             <div class="input-group2">
                 <p>:</p>
-                <input type="file" id="gambar" onchange="previewImage()" accept="image/*" name="gambar_gallery" required>
+                <input type="file" id="gambar" onchange="previewImage()" accept="image/*" name="gambar_gallery">
                 <input type="hidden" name="gambar_lama_gallery" value="<?php echo $data['gambar']; ?>">
             </div>
         </div>
@@ -27,7 +27,7 @@ if (isset($_POST['id'])) {
             </div>
             <div class="gambar-button2">
                 <span class="cancel">Batal</span>
-                <button type="submit">Update</button>
+                <button id="btn-submit" type="submit">Update</button>
             </div>
         </div>
     </div>
@@ -44,5 +44,11 @@ if (isset($_POST['id'])) {
                 "overflow": "auto"
             });
         });
+    });
+</script>
+
+<script>
+    document.getElementById("btn-submit").addEventListener("click", function() {
+        alert("Data berhasil diperbarui!");
     });
 </script>

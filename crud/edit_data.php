@@ -22,7 +22,6 @@ if ($file_tmp) {
         // query update makanan
 
         $query = "UPDATE makanan SET id_jenis_makanan = '$jenis', nama_makanan = '$nama', harga_makanan = '$harga', gambar_makanan = '$gambar' WHERE id_makanan = '$id'";
-
         mysqli_query($koneksi, $query)
             or die("Query gagal dijalankan: " . mysqli_error($koneksi));
         header("location: ../page/dashboard.php");

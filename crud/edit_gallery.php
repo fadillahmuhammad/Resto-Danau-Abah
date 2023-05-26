@@ -24,4 +24,13 @@ if ($file_tmp_gallery) {
     mysqli_query($koneksi, $query)
         or die("Query gagal dijalankan: " . mysqli_error($koneksi));
     header("location: ../page/dashboard.php");
+} else {
+    // query update gallery
+    $query = $koneksi->query("SELECT * FROM gallery WHERE id_gallery = '$id'");
+    $data = $query->fetch_assoc();
+
+    $query = "UPDATE gallery SET gambar = '$data[gambar]' WHERE id_gallery = '$id'";
+    mysqli_query($koneksi, $query)
+        or die("Query gagal dijalankan: " . mysqli_error($koneksi));
+    header("location: ../page/dashboard.php");
 }

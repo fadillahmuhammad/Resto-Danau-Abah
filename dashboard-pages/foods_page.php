@@ -102,7 +102,7 @@ include "../auth/koneksi.php";
                         <div id="hero"></div>
                         <div class="final-btn">
                             <span class="cancel">Batal</span>
-                            <button type="submit">Tambah</button>
+                            <button id="btn-add" type="submit">Tambah</button>
                         </div>
                     </div>
                 </div>
@@ -139,6 +139,12 @@ include "../auth/koneksi.php";
                 "overflow": "auto"
             });
         });
+    });
+</script>
+
+<script>
+    document.getElementById("btn-add").addEventListener("click", function() {
+        alert("Data berhasil ditambahkan!");
     });
 </script>
 
@@ -211,6 +217,7 @@ include "../auth/koneksi.php";
                         id: id
                     },
                     success: function() {
+                        alert("Data berhasil dihapus!");
                         location.reload();
                     }
                 });
