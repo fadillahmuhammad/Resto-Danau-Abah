@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Bulan Mei 2023 pada 02.54
+-- Waktu pembuatan: 26 Bulan Mei 2023 pada 04.35
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -20,6 +20,51 @@ SET time_zone = "+00:00";
 --
 -- Database: `danau_abah`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `about_us`
+--
+
+CREATE TABLE `about_us` (
+  `id_about` int(1) NOT NULL,
+  `paragraf` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `about_us`
+--
+
+INSERT INTO `about_us` (`id_about`, `paragraf`) VALUES
+(1, 'Resto Danau Abah adalah sebuah restoran yang terletak di tepi Danau Abah, sebuah danau yang indah di daerah pedesaan. Restoran ini menawarkan pemandangan danau yang spektakuler, dan pengunjung dapat menikmati hidangan yang lezat sambil menikmati keindahan alam sekitarnya.'),
+(2, 'Restoran ini menggunakan bahan-bahan segar dan berkualitas tinggi untuk menyajikan hidangan yang lezat. Selain itu, staf yang ramah dan profesional akan membuat kunjungan Anda di Resto Danau Abah menjadi pengalaman yang menyenangkan dan tak terlupakan.');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `gallery`
+--
+
+CREATE TABLE `gallery` (
+  `id_gallery` int(2) NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `gallery`
+--
+
+INSERT INTO `gallery` (`id_gallery`, `gambar`) VALUES
+(1, 'img1.jpg'),
+(2, 'img2.jpg'),
+(3, 'img3.jpg'),
+(4, 'img4.png'),
+(5, 'img5.png'),
+(6, 'img6.png'),
+(7, 'img7.jpg'),
+(8, 'img8.jpeg'),
+(9, 'about1.webp');
 
 -- --------------------------------------------------------
 
@@ -81,7 +126,7 @@ CREATE TABLE `makanan` (
 --
 
 INSERT INTO `makanan` (`id_makanan`, `id_jenis_makanan`, `nama_makanan`, `harga_makanan`, `gambar_makanan`) VALUES
-(1, 1, 'Ayam Baby Boiler', '23K', 'ayambb.jpeg'),
+(1, 1, 'Ayam Baby Boiler', '25K', 'ayambb.jpeg'),
 (2, 1, 'Ayam Kampung', '22K', 'ayamkampung.jpeg'),
 (3, 1, 'Bakwan Jagung', '10K', 'desktop-wallpaper-the-way-you-play-yae-miko-could-be-totally-different-in-next-genshin-update-genshin-impact-yae-miko.jpg'),
 (4, 1, 'Ikan Gurame', '20K', 'ikangurame.jpeg'),
@@ -129,7 +174,7 @@ CREATE TABLE `minuman` (
 --
 
 INSERT INTO `minuman` (`id_minuman`, `id_jenis_minuman`, `nama_minuman`, `harga_minuman`, `gambar_minuman`) VALUES
-(1, 1, 'Air Mineral', '7K', 'bg1.jpg'),
+(1, 1, 'Air Mineral', '12K', 'Gambar WhatsApp 2023-05-20 pukul 14.14.33.jpg'),
 (2, 1, 'Teh Tawar', '5K', 'bg4.jpg'),
 (3, 1, 'Es Teh Tawar', '6K', 'desktop-wallpaper-the-way-you-play-yae-miko-could-be-totally-different-in-next-genshin-update-genshin-impact-yae-miko.jpg'),
 (4, 1, 'Teh Manis', '7.5K', 'about2.jpeg'),
@@ -160,6 +205,18 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `about_us`
+--
+ALTER TABLE `about_us`
+  ADD PRIMARY KEY (`id_about`);
+
+--
+-- Indeks untuk tabel `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id_gallery`);
 
 --
 -- Indeks untuk tabel `jenis_makanan`
@@ -202,6 +259,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id_gallery` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `makanan`
